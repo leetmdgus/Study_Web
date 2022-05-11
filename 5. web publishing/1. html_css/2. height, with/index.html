@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Box Model</title>
+  <meta charset="utf-8">
+  <style>
+    h1{
+      border: 5px solid red;
+      min-width: 500px;
+      max-width: 1000px;
+      
+    }
+    .p1{
+      border: 5px solid red;
+      max-width: 700px;
+      max-height: 20px;
+      overflow:hidden;
+    }
+    .p2{
+      border: 5px solid red;
+      max-height: 70px;
+      overflow:auto;
+
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Life is beautiful</h1>
+  <p class = "p1">
+    인생은 아름다워<br>
+    인생이 너무너무 아름다워<br>
+    너무너무너무
+  </p>
+  <p class ="p2">
+    만약 max height를 설정할 경우 <br>
+    글이 border를 넘는경우가 발생한다. <br>
+    이는 오버플로우로 해결할 수 있다. <br>
+    overflow:visible 은 기본 값이다. <br>
+    overflow:hiden을 사용하면 border보다 넘는 글은 안보이게 할 수 있다. <br>
+    혹은 scroll을 사용하는 방법도 있다. <br>
+    비슷한 값으로는 auto가 있다. <br>
+    scroll은 overflow가 발생하지 않아도 scroll을 띄우는데<br>
+    auto는 내용이 많지 않으면 scroll을 띄우지 않음</p>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Box Model</title>
+  <meta charset="utf-8">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      background-color: gainsboro;
+    }
+    h1{
+      width: 300px;
+      height: 200px;
+      padding: 35px;
+      border:5px solid orange;
+    }
+    #p1{
+      padding: 10px;
+      border:5px dashed green;
+      border-radius:10px;
+      background-color: rgba(0,255,0,0.2);
+    }
+    #p2{
+      border-top-left-radius: 5px;
+      margin-top: 100px;
+      max-width: 300px;
+      box-shadow: 50px -10px 30px 50px red;
+    }
+  </style>
+</head>
+<body>
+  <h1>인생은 아름다워</h1>
+  <p>
+    그냥 widh :40, heigh : 50을 하면 padding시 전체 border사이즈가 원하는 만큼 안나온다.<br>
+    그때 border-sizing을 이용한다. 
+    border-sizing:border-box를 이용하면 padding을 해도 박스 사이즈가 잘 설정된다. 
+    border-sizing:content-box는 기본 값이다. 
+    요즘은 모든 요소에 box-sizing:border-box;를 추가하는 편
+  </p>
+  <p id = "p1"> 
+    border-radius를 이용하면 모서리가 둥그러집니다.  <br>
+    border-top-left-radius 와 같이 개별 설정도 가능합니다. 
+    값이 커질수록 둥글다. <br>
+    background-color를 사용하면 모서리 안을 colorful하게 만들수 있다. <br>
+    만약 background-color를 투명하게 만들고 싶다면 <br>
+    transparent를 사용한다. <br>
+    background-color:transparent가 기본값이다. <br>
+    rgba(레드, 그린, 블루, 투명도)를 설정하여 투명도 조절가능<br>
+    1에 가까워질수록 진한 색, 0에 가까워질수록 연한색
+  </p>
+  <p id = "p2">
+    box-shadow를 이용하면 그림자를 입힐 수 있다.  <bR>
+    기본값은 null이다. <br>
+    <b>box-shadow 가로 세로 흐리기 그림자크기 색</b><br>
+    가로 위치는 커지면 커질 수록 오른쪽으로
+    세로 위치는 커지면 커질 수록 밑으로 간다. 
+    만약 마이너스를 쓰면 거꾸로 간다.<br>
+    그림자 색을 지정할 수도 있고<br>
+    그림자 흐리기도 지정할 수 있고,<br>
+    그림자의 크기또한 설정할 수 있다.<br>
+    0이기본이고 -면 작아지고 양의 값이면 커진다.   
+  </p>
+
+  </p>
+</body>
+</html>

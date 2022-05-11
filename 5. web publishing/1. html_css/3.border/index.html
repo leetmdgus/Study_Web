@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .p1{
+      border: 2px solid red;
+    }
+    .p2{
+      border:2px dotted blue;
+    }
+    .p3{
+      border:2px dashed purple;
+    }
+    .p4{
+      border-top: 3px dotted teal;
+      border-bottom: 5px dashed grey;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>자 border를 봅시다. </h1>
+  <p class = "p1"> 이것은 실선</p>
+  <p class = "p2"> 이것은 점선</p>
+  <p class = "p3"> 이것은 파선</p>
+
+  <h2> 테두리를 정의하는 다른 방법</h2>
+  <p class = "p4">
+    border-syle에서 실선인지 점선인지 정함<br>
+    border-color에서 색을 정함<br>
+    border-width에서 선의 굵기를 정함<br>
+
+    잘 선호하지는 않음<br>
+    border-top:3px dotted blue;<br>
+    border-bottom:4px dashed red;<br>
+    이런식으로 각각 지정할 수 있다. 
+  </p>
+  <p> 어떤 요소(ex input)들은 default로 border가 설정되어 있다. <br>
+    그럴때는 border:none; 이나 border:0;을 사용하면 border를 제거할 수 있다. <br>
+  </p>
+</body>
+</html>
