@@ -1,0 +1,8 @@
+@font-face {
+    src: url("../fonts/OleoScriptSwashCaps-Bold.ttf");
+    font-family: "Ofl";
+}
+
+p{
+    font-family: "Ofl";
+}

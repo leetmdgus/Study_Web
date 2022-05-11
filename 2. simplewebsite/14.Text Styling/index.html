@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styling Text</title>
+    <meta charset="utf-8">
+    <style>
+        p{
+            font-size: 32px;
+            font-weight: 400px;
+            text-align: center;
+            text-decoration: underline;
+            color:blue;
+            text-decoration-color: black;
+        }
+        a{
+            display:block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <p>텍스트를 다양하게 스타일링 해봅시다. </p>
+    <p>font-weight: 400 -> 보통 굵기 700 -> <b>b태크 했을때랑 같은 굵기</b> </p>
+    <p>font-weight는 100 200 300 400 500 600 700 800 900 만 지원 만약 110 처럼 없는 굵기를 넣을 경우 기본 폰트로.. </p>    
+    <p>폰트와 브라우저 마다 사용 가능한 굵기가 다르다. <br>
+    따라서 테스트를 통해 사용하도록 합시다!</p>
+    <p>text-align : 기본으로 왼쪽 정렬이다. </p>
+    <p>text-decoration:overline -> 글위의 줄을 그을 수 있다. <br>
+    text-decoration: underline -> 밑줄을 그을 수 있다. <br>
+    text-decoration: line-through -> 글을 지운 듯한 효과를 줄 수 있다. <br>
+    text-decoratoin: none -> a테그의 경우 밑줄이 자동으로 그어져있는데 이를 이용하여 지울 수 있다. <br>
+    </p>
+    <a href = "#">현재 페이지</a>
+    <a href = "#">현재 페이지</a>
+    <a href = "#">현재 페이지</a>
+    <p>개발자도구를 통해 a테그를 보면 전체가 아닌 딱 a테크만큼 공간을 차지한다. <br>
+    그렇기때문에 text-align만을 하면 변화가 없다. <br>
+    a 테그 가운데 정렬하는 법.<br>
+    div로 감싼후 text-align: center를 한다. <br>
+    혹은 display: block; 후 text-align:center를 한다. <br>
+    </p>
+
+    <p>display : block 설정과 inline설정이 있는데 <br>
+    기본 p태그는 blo</p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>font size</title>
+    <meta charset="utf-8">
+    <style>
+        body{
+            font-size: 5px;
+        }
+        .div1{
+            font-size: 100%;
+        }
+        .div2{
+            font-size: 200%;
+        }
+        .div3{
+            font-size: 200%;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=East+Sea+Dokdo&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Absolute (절대적)</h1>
+    <ul>
+        <li>px</li>
+        <li>pt</li>
+    </ul>
+    <h1>Relative (상대적)</h1>
+    <ul>
+        <li>em</li>
+        <li>%</li>
+    </ul>
+
+    <div class = "div1">
+        div1 %시 부모인 body에서 %만큼 커진다. 
+        <p>1em == 100%</p>
+        <p>2em == 200%</p>
+        <div class = "div2">
+            div2 %시 부모인 div1에서 %만큼 커진다. 
+            <div class = "div3">
+                div3 %시 부모인 div2에서 %만큼 커진다. 
+            </div>
+        </div>
+    </div>
+    <p>line-height : 콘텐츠 영역은 <br>
+        font-family 와 font-size에 따라 'content area'가 정해진다 <br>
+        line-height는 content area에 영향을 주지 않는다. <br>
+        line-height를 통해 각 줄이 실질적으로 차지하는 공간을 정해줄 수 있다. <br>
+        line-height를 99 px로 설정하면 <br>
+        content area보먀 40px가 많이 때문에 20px의 공간이 추가로 생긴다. <br>
+        반대로 40px로 설정하면 content area보다 19px가 적기 때문에 위아래 -9.5px의 공간이 줄어든다. <br>
+        <img src="./img/img.png" height ="100">
+    </p>
+    <h2>폰트 설정</h2>
+    <p style="font-family:궁서체,'Times New Roman',Times,serif";>serif : Times New Roman / 궁서체 -> 끝이 구부러짐 </p>
+    <p style="font-family:Arial,굴림체,sans-serif">sans-serif : Arial / 굴림체 -> 깔끔한 디자인</p>
+    <p style="font-family:Couier,Monospace">Monospace : Courier / Courier New -> 모든 글자가 같은 넓이 차지</p>
+    <p style="font-family:Comic Sans MS, Cursive">Cursive : Comic Sans MS / Monotype Coursiva -> 필기체</p>
+    <p style="font-family: Impact,Maettenschweller, Fantasy">Fantasy : Impact / Maettenschweller -> 좀 특이한 나머지 글귀 포함</p>
+    
+    <p>Cursive 나 Fantasy는 긴 글에서 사용시 지저분할 수 있어서 <br>
+    머릿말이나 짧은 글에 사용<br>
+    font-family : "Times New Roman", Times, serif <br>
+    띄어쓰기가 있는 것은 ""로 묶어두고 그 폰트가 없을 경우를 대비해 <br>
+    대체 가능한 폰트를 두 번째에 둘 수 있다.<br> 
+    마지막 대안으론 폰트 종류를 쓴다. <br>
+    설치되어있는 serif 폰트중 아무거나 쓴다. <br></p>
+
+    <p>설치되어있지 않은 폰트 사용하기</p>
+    <p>google font 사용한다!</p>
+    <a href = "https://fonts.google.com/?subset=korean" target="_blank">구글 폰트!</a>
+    <p>select선택 -> Link태크를 head테그에 붙여 넣는다. 그러면 link를 붙인 페이지에서 사용가능하다. </p>
+    
+    <p style="font-family: 'Dongle', sans-serif;">이것처럼 사용하면 됩니다!</p>
+    <img src = "./img/im2.png" width="100">
+</body>
+</html>
