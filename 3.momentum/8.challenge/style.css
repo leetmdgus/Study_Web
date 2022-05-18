@@ -1,0 +1,15 @@
+h1{
+  color:white;
+}
+
+.purpleBackground{
+  background-color: rgba(100, 10, 200, 0.7);
+}
+
+.blueBackground{
+  background-color: rgba(10,100,200,0.7);
+}
+
+.yellowBackground{
+  background-color: rgba(250, 200, 10, 0.9);
+}

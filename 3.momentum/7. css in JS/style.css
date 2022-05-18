@@ -1,0 +1,17 @@
+body{
+  background-color: beige;
+}
+
+h1{
+  color:cornflowerblue;
+  
+  transition:color .1000s ease-in-out;
+}
+
+.active{
+  color:tomato;
+}
+
+.font{
+  font-family: 'Courier New', Courier, monospace;
+}

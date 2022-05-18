@@ -18,3 +18,15 @@ console.log(parseInt(age));
 //NaN이라면 true 아니면 false 반환
 
 console.log(isNaN(age));
+// Write document in console, we can see html file.
+// as you know, console.dir(document) , document is object;
+// document can show html like JavaScript. and it seem to object.
+
+// this is very important
+// The reason why, 
+// I could get title of my html document from Javascript.
+// to using documnet, we can load with Html in Javascript
+
+// document.title = "Hi";
+// We are reading Html from Javascript, 
+// also we are able to change Html.
